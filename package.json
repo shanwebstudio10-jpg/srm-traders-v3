@@ -2,8 +2,13 @@
   "name": "srm-traders-v3",
   "private": true,
   "version": "3.0.0",
+  "workspaces": [
+    "frontend",
+    "admin",
+    "worker"
+  ],
   "scripts": {
-    "install:all": "npm --prefix worker install && npm --prefix frontend install && npm --prefix admin install",
+    "install:all": "npm install && npm --prefix worker install && npm --prefix frontend install && npm --prefix admin install",
     "dev:worker": "npm --prefix worker run dev",
     "dev:frontend": "npm --prefix frontend run dev",
     "dev:admin": "npm --prefix admin run dev",
