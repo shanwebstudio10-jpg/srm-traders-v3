@@ -1,0 +1,16 @@
+name = "srm-traders-api"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+[vars]
+# "*" = எங்கிருந்தும் அனுமதி (சோதனைக்கு). Domain வாங்கிய பிறகு காற்புள்ளியால் பிரித்து எழுதவும்:
+# ALLOWED_ORIGIN = "https://srmtraders.in,https://www.srmtraders.in,https://admin.srmtraders.in"
+ALLOWED_ORIGIN = "*"
+ADMIN_USER = "admin"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "srm-traders-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# Secrets (wrangler secret put ...): ADMIN_PASSWORD, JWT_SECRET, RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET

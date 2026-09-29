@@ -1,0 +1,14 @@
+{
+  "name": "srm-traders-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8787",
+    "db:init": "wrangler d1 execute srm-traders-db --local --file=schema.sql",
+    "db:seed": "wrangler d1 execute srm-traders-db --local --file=seed.sql",
+    "db:init:remote": "wrangler d1 execute srm-traders-db --remote --file=schema.sql",
+    "db:seed:remote": "wrangler d1 execute srm-traders-db --remote --file=seed.sql",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": { "wrangler": "^3.90.0" }
+}
