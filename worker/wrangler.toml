@@ -1,4 +1,4 @@
-name = "srm-traders-api"
+name = "srm-traders-v3"
 main = "src/index.js"
 compatibility_date = "2024-11-01"
 
@@ -11,6 +11,6 @@ ADMIN_USER = "admin"
 [[d1_databases]]
 binding = "DB"
 database_name = "srm-traders-db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "b6c0eacb-21e4-4f9c-b09f-c19f5bade6b7"
 
 # Secrets (wrangler secret put ...): ADMIN_PASSWORD, JWT_SECRET, RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET
